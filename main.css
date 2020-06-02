@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+
+body{
+    background-image: linear-gradient(to bottom ,black, #8f61fd, #589fde, black);
+    height: 100vh;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+video {
+    background-color: black;
+    box-shadow:5px 5px 20px rgba(0,0,0,50); 
+}
+
+.sendsvg{
+    height: 6vh;
+}
+
+.emotesvg{
+    height: 10vh;
+}
+
+input{
+    width: 25vw;
+    height: 5vh;
+    background-color: rgb(18,18,18);
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 3%;
+    color: #707070;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-size: 14px;
+}
