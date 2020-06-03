@@ -48,6 +48,7 @@ function App() {
         </div>
         <div className="col-3" style={{ backgroundColor: "#8f3dc2" }}>
           <Chat/>
+          <h1>asljkdfajskdfjk</h1>
         </div>
       </div>
     </div>
