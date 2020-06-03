@@ -5,7 +5,7 @@ import VideoFrame from './videoFrame';
 import BigUp from './bigup';
 import Clap from './clap';
 import Chat from './chatBox';
-
+import EmoteCanvas from './emoteCanvas';
 
 function App() {
   return (<div>
@@ -51,8 +51,7 @@ function App() {
         </div>
       </div>
     </div>
-    <canvas className="emote"></canvas>
-    
+    <EmoteCanvas />
   </div>
   );
 }

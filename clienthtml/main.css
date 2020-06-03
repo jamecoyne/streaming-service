@@ -18,7 +18,6 @@ body{
 }
 
 .emote{
-    border: 4px solid red;
     width: 30%;
     height: 100vh;
     position: absolute;
