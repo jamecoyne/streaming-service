@@ -4,9 +4,12 @@ import './App.css';
 import VideoFrame from './videoFrame';
 import BigUp from './bigup';
 import Clap from './clap';
+import Chat from './chatBox';
+
 
 function App() {
   return (<div>
+    
     <div className="container-fluid" style={{ height: "100vh" }}>
       <div className="row" style={{ height: "100vh" }}>
         <div className="col-1 text-left">
@@ -44,11 +47,12 @@ function App() {
           </div>
         </div>
         <div className="col-3" style={{ backgroundColor: "#8f3dc2" }}>
-          <h4>Chat goes here</h4>
+          <Chat/>
         </div>
       </div>
     </div>
     <canvas className="emote"></canvas>
+    
   </div>
   );
 }
