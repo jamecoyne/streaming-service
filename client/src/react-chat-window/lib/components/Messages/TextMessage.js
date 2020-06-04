@@ -13,6 +13,7 @@ var _reactLinkify2 = _interopRequireDefault(_reactLinkify);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 var TextMessage = function TextMessage(props) {
+  
   return _react2.default.createElement(
     'div',
     { className: 'sc-message--text' },

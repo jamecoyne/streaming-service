@@ -14,6 +14,10 @@ var _EmojiMessage = require('./EmojiMessage');
 
 var _EmojiMessage2 = _interopRequireDefault(_EmojiMessage);
 
+var _AlertMessage = require('./AlertMessage');
+
+var _AlertMessage2 = _interopRequireDefault(_AlertMessage);
+
 var _FileMessage = require('./FileMessage');
 
 var _FileMessage2 = _interopRequireDefault(_FileMessage);
@@ -47,6 +51,8 @@ var Message = function (_Component) {
         return _react2.default.createElement(_EmojiMessage2.default, this.props.message);
       case 'file':
         return _react2.default.createElement(_FileMessage2.default, this.props.message);
+      case 'alert':
+        return _react2.default.createElement(_AlertMessage2.default, this.props.message);
       default:
         console.error('Attempting to load message with unsupported file type \'' + type + '\'');
     }

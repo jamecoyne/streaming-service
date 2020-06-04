@@ -10,6 +10,7 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+
 var _MessageList = require('./MessageList');
 
 var _MessageList2 = _interopRequireDefault(_MessageList);
@@ -49,6 +50,7 @@ var ChatWindow = function (_Component) {
 
   ChatWindow.prototype.render = function render() {
     var messageList = this.props.messageList || [];
+ 
     var classList = ["sc-chat-window", this.props.isOpen ? "opened" : "closed"];
     return _react2.default.createElement(
       'div',

@@ -40,10 +40,20 @@ var MessageList = function (_Component) {
           return _this2.scrollList = el;
         } },
       this.props.messages.map(function (message, i) {
-        return _react2.default.createElement(_Messages2.default, { message: message, key: i });
-      })
+        let author = '';
+        //create a div for the author if the author isnt "me"
+        if (message.author !== 'me'){
+          author = _react2.default.createElement('div',
+          { className: 'message-author', key: "auth" + i },
+          message.author,
+          )
+        }
+        let messageBody = _react2.default.createElement(_Messages2.default, { message: message, key: i });
+        return [author, messageBody];
+      }), 
     );
   };
+  console.log(MessageList);
 
   return MessageList;
 }(_react.Component);

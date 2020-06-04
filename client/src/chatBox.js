@@ -1,21 +1,35 @@
 import React, {Component} from 'react';
 import './App.css';
-import {Launcher} from './react-chat-window/lib'
+import {Launcher} from './react-chat-window/lib/index.js';
+import testMessages from './testMessages';
 
+
+export function sendMessageCall(message) {
+//api call, gets the updated message list in the callback
+// return messageList
+}
 
 class Chat extends Component {
  
   constructor() {
     super();
     this.state = {
-      messageList: []
+      messageList: testMessages
     };
+    
   }
  
   _onMessageWasSent(message) {
+
+    //this.state.messageList = sendMessageCall(message);
+    // this.setState({
+    //   messageList: //socket io input messages will go here
+    // })
+
     this.setState({
       messageList: [...this.state.messageList, message]
     })
+    
   }
  
   _sendMessage(text) {
