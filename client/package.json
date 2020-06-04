@@ -8,6 +8,7 @@
     "@testing-library/user-event": "^7.1.2",
     "bootstrap": "^4.5.0",
     "emoji-js": "^3.5.0",
+    "p5": "^1.0.0",
     "react": "^16.13.1",
     "react-chat-window": "^1.2.1",
     "react-dom": "^16.13.1",
@@ -33,5 +34,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-p5-wrapper": "^2.0.0"
   }
 }
