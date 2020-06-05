@@ -1,7 +1,9 @@
+
 'use strict';
 
 exports.__esModule = true;
 
+ 
 var _propTypes = require('prop-types');
 
 var _propTypes2 = _interopRequireDefault(_propTypes);
@@ -33,8 +35,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+const ContextContainer = _react.createContext(null);
+
 
 var Launcher = function (_Component) {
+  
   _inherits(Launcher, _Component);
 
   function Launcher() {
@@ -44,7 +49,7 @@ var Launcher = function (_Component) {
 
     _this.state = {
       launcherIcon: _logoNoBg2.default,
-      isOpen: false
+      isOpen: true
     };
     return _this;
   }
@@ -70,9 +75,11 @@ var Launcher = function (_Component) {
     if (this.props.handleClick !== undefined) {
       this.props.handleClick();
     } else {
+      
       this.setState({
         isOpen: !this.state.isOpen
       });
+      console.log(this.state.isOpen);
     }
   };
 
@@ -130,6 +137,7 @@ Launcher.defaultProps = {
   newMessagesCount: 0,
   showEmoji: true
 };
+
 
 exports.default = Launcher;
 module.exports = exports['default'];

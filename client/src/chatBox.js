@@ -4,19 +4,19 @@ import {Launcher} from './react-chat-window/lib/index.js';
 import testMessages from './testMessages';
 
 
+
 export function sendMessageCall(message) {
 //api call, gets the updated message list in the callback
 // return messageList
 }
 
 class Chat extends Component {
- 
+
   constructor() {
     super();
     this.state = {
       messageList: testMessages
     };
-    
   }
  
   _onMessageWasSent(message) {

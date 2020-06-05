@@ -53,7 +53,7 @@ var MessageList = function (_Component) {
       }), 
     );
   };
-  console.log(MessageList);
+
 
   return MessageList;
 }(_react.Component);

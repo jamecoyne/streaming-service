@@ -45,10 +45,11 @@ function App() {
               />
             </div>
           </div>
+          
         </div>
-        <div className="col-3" style={{ backgroundColor: "#8f3dc2" }}>
-          <Chat/>
-        </div>
+        {/* <div className="col-3" style={{ backgroundColor: "#8f3dc2" }}> */}
+        <Chat/>
+        {/* </div> */}
       </div>
     </div>
     <EmoteCanvas />
